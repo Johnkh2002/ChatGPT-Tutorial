@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<head lang="en">
+    {% block head %}
+
+    {% endblock %}
+    <!-- CSS only -->
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script type="text/javascript" src="{% static 'popper.min.js' %}" defer></script>
+    <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}" defer></script>
+    <!--AJAX-->
+    <script type="text/javascript" src="{% static 'ajax.js' %}" defer></script>
+    <!--My JS-->
+    <script src="{% static 'javascript.js' %}" type="text/javascript" defer></script>
+    <!--My CSS-->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+</head>
+<body class="bg bg-gradient bg-light">
+{% block body %}
+{% endblock %}
+</body>
